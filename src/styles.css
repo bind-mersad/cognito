@@ -20,6 +20,11 @@ p {
   margin: 0;
 }
 
+.text-link{
+  color: #1976d2;
+  cursor: pointer;
+}
+
 .spacer {
   flex: 1;
 }
