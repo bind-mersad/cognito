@@ -1,12 +1,15 @@
 <form>
     <div>
-        <h1 >Register with My APP</h1>
+        <h1 style="color: blue;">Register with My APP</h1>
+    </div>
+    <div>
+        <label for="username">Username</label>
+        <input type="text" name="username" [(ngModel)]="username" required placeholder="Enter username">
     </div>
     <div>
         <label for="givenName">First Name</label>
         <input type="text" name="givenName" [(ngModel)]="givenName" required placeholder="Enter your first name">
     </div>
-
     <div>
         <label for="familyName">Last Name</label>
         <input type="text" name="familyName" [(ngModel)]="familyName" required placeholder="Enter your last name">
@@ -25,3 +28,4 @@
         <button (click)="register()" class="btn btn-primary btn-block" type="button"> Register </button>
     </div>
 </form>
+<p class="text-dark mb-0">Already a member?<a href="/login" class="text-primary ml-1">Login</a></p>
